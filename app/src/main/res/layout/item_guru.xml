@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/foto_profil"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:layout_margin="7dp"
+            android:src="#D3D3D3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/id_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id Guru"
+            app:layout_constraintEnd_toEndOf="@id/foto_profil"
+            app:layout_constraintStart_toStartOf="@id/foto_profil"
+            app:layout_constraintTop_toBottomOf="@id/foto_profil" />
+
+        <TextView
+            android:id="@+id/nama_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="Nama"
+            app:layout_constraintStart_toEndOf="@id/foto_profil"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/alamat_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="Alamat"
+            app:layout_constraintStart_toEndOf="@id/foto_profil"
+            app:layout_constraintTop_toBottomOf="@id/nama_guru" />
+
+        <TextView
+            android:id="@+id/jenis_kelamin_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="Jenis Kelamin"
+            app:layout_constraintStart_toEndOf="@id/foto_profil"
+            app:layout_constraintTop_toBottomOf="@id/alamat_guru" />
+
+        <TextView
+            android:id="@+id/telp_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="No Telp"
+            app:layout_constraintStart_toEndOf="@id/foto_profil"
+            app:layout_constraintTop_toBottomOf="@id/jenis_kelamin_guru" />
+
+        <TextView
+            android:id="@+id/username_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="Username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/password_guru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="7dp"
+            android:text="Password"
+            app:layout_constraintBottom_toBottomOf="@id/telp_guru"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
